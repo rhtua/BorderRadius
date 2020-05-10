@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="border-radius.js"></script>
+
+</head>
+
+<body>
+    <h1>AJUSTE OS VALORES PARA ALTERAR O RESPECTIVO BORDER-RADIUS:</h1>
+    <a onclick="copy()" href="#">Clique no objeto para copiar o código CSS</a>
+    <div class="align">
+        <div class="left">
+            <div class="bt">
+                <h4 id="top-left-text">0</h4>
+                <input class="slider" id="top-left" type="range" min="0" max="100" oninput="atualizaValor(this)"
+                    value="0">
+            </div>
+            <div class="bt">
+                <h4 id="bottom-left-text">0</h4>
+                <input class="slider" id="bottom-left" type="range" min="0" max="100" oninput="atualizaValor(this)"
+                    value="0">
+            </div>
+        </div>
+        <div class="border" id="border" onclick="copy()">
+        </div>
+        <div class="right">
+            <div class="bt">
+                <h4 id="top-right-text">0</h4>
+                <input class="slider" id="top-right" type="range" min="0" max="100" oninput="atualizaValor(this)"
+                    value="0">
+            </div>
+            <div class="bt">
+                <h4 id="bottom-right-text">0</h4>
+                <input class="slider" id="bottom-right" type="range" min="0" max="100" oninput="atualizaValor(this)"
+                    value="0">
+            </div>
+        </div>
+        <textarea id="css"></textarea>
+        <footer>Made with love by Arthur Oliveira</foooter>
+    </div>
+</body>
+<link href="border-radius.css" rel="stylesheet" />
+
+</html>
